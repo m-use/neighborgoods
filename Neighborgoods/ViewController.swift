@@ -23,12 +23,26 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
         locationManager.requestWhenInUseAuthorization()
         locationManager.startUpdatingLocation()
         
-        let businessCoordinate = CLLocationCoordinate2DMake(33.501485, -111.917650)
-        let annotation = MKPointAnnotation()
-        annotation.coordinate = businessCoordinate
-        annotation.title = "Bread Basket Bakery"
-        annotation.subtitle = "4436 N Miller Rd"
-        map.addAnnotation(annotation)
+        let businessName = "Bread Basket Bakery"
+        let businessAddress1 = "4436 N. Miller Rd."
+        let businessAddress2 = "Scottsdale, AZ 85251"
+        
+        CLGeocoder().geocodeAddressString("\(businessAddress1), \(businessAddress2)", completionHandler: { (placemarks, error) -> Void in
+            if (error == nil) {
+                if let p = placemarks?[0] {
+                    let latitude = p.location!.coordinate.latitude
+                    let longitude = p.location!.coordinate.longitude
+                    let businessCoordinate = CLLocationCoordinate2DMake(latitude, longitude)
+                    let annotation = MKPointAnnotation()
+                    annotation.coordinate = businessCoordinate
+                    annotation.title = businessName
+                    annotation.subtitle = businessAddress1
+                    self.map.addAnnotation(annotation)
+                }
+            }
+        })
+        
+        
         
     }
 
