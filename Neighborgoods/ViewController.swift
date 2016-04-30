@@ -74,5 +74,11 @@ class ViewController: UIViewController {
         mapItem.openInMapsWithLaunchOptions(nil)
     }
 
+    // Opens Phone app
+    @IBAction func phone(sender: AnyObject) {
+let url:NSURL = NSURL(string: "tel://\(businessPhone)")!
+UIApplication.sharedApplication().openURL(url)
+        
+    }
 }
 
