@@ -14,11 +14,10 @@ let businessAddress1 = "4436 N. Miller Rd. Ste 102"
 let businessAddress2 = "Scottsdale, AZ 85251"
 let businessPhone = "(480) 423-0113"
 let businessUrl = "http://breadbasketbakeryscottsdale.com/"
-var location = CLLocationCoordinate2D()
 
 class ViewController: UIViewController {
     
-    var myPosition = CLLocationCoordinate2D()
+    var location = CLLocationCoordinate2D()
     var mapItem = MKMapItem()
 
     override func viewDidLoad() {
@@ -27,14 +26,11 @@ class ViewController: UIViewController {
         CLGeocoder().geocodeAddressString("\(businessAddress1), \(businessAddress2)", completionHandler: { (placemarks, error) -> Void in
             if (error == nil) {
                 if let p = placemarks?[0] {
-                    location = p.location!.coordinate
+                    self.location = p.location!.coordinate
                     self.mapItem = MKMapItem(placemark: MKPlacemark(placemark: p))
                 }
             }
         })
-        
-        
-        
     }
 
     override func didReceiveMemoryWarning() {
@@ -42,11 +38,13 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    @IBAction func directions(sender: AnyObject) {
+    // Opens Maps app
+    @IBAction func map(sender: AnyObject) {
         mapItem.name = businessName
         mapItem.phoneNumber = businessPhone
         mapItem.url = NSURL(string: businessUrl)
         mapItem.openInMapsWithLaunchOptions(nil)
     }
+
 }
 
