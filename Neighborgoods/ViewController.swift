@@ -18,8 +18,6 @@ var location = CLLocationCoordinate2D()
 
 class ViewController: UIViewController {
     
-    @IBOutlet var map: MKMapView!
-    
     var myPosition = CLLocationCoordinate2D()
     var mapItem = MKMapItem()
 
