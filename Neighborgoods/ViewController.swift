@@ -32,6 +32,7 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.title = businessName
         displayBusinessInfo()
         displayPromoInfo()
         

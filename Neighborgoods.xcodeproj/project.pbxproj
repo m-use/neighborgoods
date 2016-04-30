@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F67379721CD4BECA00BE4BF0 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F67379711CD4BECA00BE4BF0 /* TableViewController.swift */; };
 		F6CB5B041CD4613700DD3587 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6CB5B031CD4613700DD3587 /* AppDelegate.swift */; };
 		F6CB5B061CD4613700DD3587 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6CB5B051CD4613700DD3587 /* ViewController.swift */; };
 		F6CB5B091CD4613700DD3587 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F6CB5B071CD4613700DD3587 /* Main.storyboard */; };
@@ -17,6 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F67379711CD4BECA00BE4BF0 /* TableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 		F6CB5B001CD4613700DD3587 /* Neighborgoods.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Neighborgoods.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F6CB5B031CD4613700DD3587 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F6CB5B051CD4613700DD3587 /* ViewController.swift */ = {isa = PBXFileReference; indentWidth = 0; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; tabWidth = 1; usesTabs = 0; };
@@ -65,6 +67,7 @@
 				F6CB5B031CD4613700DD3587 /* AppDelegate.swift */,
 				F6CB5B051CD4613700DD3587 /* ViewController.swift */,
 				F6CB5B071CD4613700DD3587 /* Main.storyboard */,
+				F67379711CD4BECA00BE4BF0 /* TableViewController.swift */,
 				F6CB5B0A1CD4613700DD3587 /* Assets.xcassets */,
 				F6CB5B0C1CD4613700DD3587 /* LaunchScreen.storyboard */,
 				F6CB5B0F1CD4613700DD3587 /* Info.plist */,
@@ -150,6 +153,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F6CB5B061CD4613700DD3587 /* ViewController.swift in Sources */,
+				F67379721CD4BECA00BE4BF0 /* TableViewController.swift in Sources */,
 				F6CB5B041CD4613700DD3587 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
