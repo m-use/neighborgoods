@@ -17,21 +17,9 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="tDx-0S-7gS">
-                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
-                                <items>
-                                    <navigationItem title="Title" id="C6U-6P-HNf">
-                                        <barButtonItem key="rightBarButtonItem" title="Directions" id="nbu-TC-0V9">
-                                            <connections>
-                                                <action selector="directions:" destination="BYZ-38-t0r" id="QQl-io-QhA"/>
-                                            </connections>
-                                        </barButtonItem>
-                                    </navigationItem>
-                                </items>
-                            </navigationBar>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pi3-GN-937">
-                                <rect key="frame" x="164" y="200" width="46" height="30"/>
-                                <state key="normal" title="Button"/>
+                                <rect key="frame" x="152" y="200" width="70" height="30"/>
+                                <state key="normal" title="Directions"/>
                                 <connections>
                                     <action selector="map:" destination="BYZ-38-t0r" eventType="touchUpInside" id="SyY-nR-D4m"/>
                                 </connections>
