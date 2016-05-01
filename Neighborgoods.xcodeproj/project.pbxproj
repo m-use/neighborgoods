@@ -9,6 +9,10 @@
 /* Begin PBXBuildFile section */
 		F64699E21CD5B93000BF81D4 /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F64699E01CD5B93000BF81D4 /* Bolts.framework */; };
 		F64699E31CD5B93000BF81D4 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F64699E11CD5B93000BF81D4 /* Parse.framework */; };
+		F64699E51CD5BA6300BF81D4 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = F64699E41CD5BA6300BF81D4 /* libsqlite3.tbd */; };
+		F64699E71CD5BA9000BF81D4 /* libstdc++.6.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = F64699E61CD5BA9000BF81D4 /* libstdc++.6.tbd */; };
+		F64699E91CD5BABF00BF81D4 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F64699E81CD5BABF00BF81D4 /* SystemConfiguration.framework */; };
+		F64699EB1CD5BADB00BF81D4 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F64699EA1CD5BADB00BF81D4 /* AudioToolbox.framework */; };
 		F67379721CD4BECA00BE4BF0 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F67379711CD4BECA00BE4BF0 /* TableViewController.swift */; };
 		F6CB5B041CD4613700DD3587 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6CB5B031CD4613700DD3587 /* AppDelegate.swift */; };
 		F6CB5B061CD4613700DD3587 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6CB5B051CD4613700DD3587 /* ViewController.swift */; };
@@ -22,6 +26,10 @@
 /* Begin PBXFileReference section */
 		F64699E01CD5B93000BF81D4 /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bolts.framework; sourceTree = "<group>"; };
 		F64699E11CD5B93000BF81D4 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
+		F64699E41CD5BA6300BF81D4 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
+		F64699E61CD5BA9000BF81D4 /* libstdc++.6.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libstdc++.6.tbd"; path = "usr/lib/libstdc++.6.tbd"; sourceTree = SDKROOT; };
+		F64699E81CD5BABF00BF81D4 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		F64699EA1CD5BADB00BF81D4 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		F67379711CD4BECA00BE4BF0 /* TableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 		F6CB5B001CD4613700DD3587 /* Neighborgoods.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Neighborgoods.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F6CB5B031CD4613700DD3587 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -39,6 +47,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F64699EB1CD5BADB00BF81D4 /* AudioToolbox.framework in Frameworks */,
+				F64699E91CD5BABF00BF81D4 /* SystemConfiguration.framework in Frameworks */,
+				F64699E71CD5BA9000BF81D4 /* libstdc++.6.tbd in Frameworks */,
+				F64699E51CD5BA6300BF81D4 /* libsqlite3.tbd in Frameworks */,
 				F64699E21CD5B93000BF81D4 /* Bolts.framework in Frameworks */,
 				F6CB5B1A1CD463E400DD3587 /* MapKit.framework in Frameworks */,
 				F64699E31CD5B93000BF81D4 /* Parse.framework in Frameworks */,
@@ -52,6 +64,10 @@
 		F6CB5AF71CD4613700DD3587 = {
 			isa = PBXGroup;
 			children = (
+				F64699EA1CD5BADB00BF81D4 /* AudioToolbox.framework */,
+				F64699E81CD5BABF00BF81D4 /* SystemConfiguration.framework */,
+				F64699E61CD5BA9000BF81D4 /* libstdc++.6.tbd */,
+				F64699E41CD5BA6300BF81D4 /* libsqlite3.tbd */,
 				F64699E01CD5B93000BF81D4 /* Bolts.framework */,
 				F64699E11CD5B93000BF81D4 /* Parse.framework */,
 				F6CB5B191CD463E400DD3587 /* MapKit.framework */,
