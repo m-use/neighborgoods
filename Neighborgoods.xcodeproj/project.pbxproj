@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F64699E21CD5B93000BF81D4 /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F64699E01CD5B93000BF81D4 /* Bolts.framework */; };
+		F64699E31CD5B93000BF81D4 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F64699E11CD5B93000BF81D4 /* Parse.framework */; };
 		F67379721CD4BECA00BE4BF0 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F67379711CD4BECA00BE4BF0 /* TableViewController.swift */; };
 		F6CB5B041CD4613700DD3587 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6CB5B031CD4613700DD3587 /* AppDelegate.swift */; };
 		F6CB5B061CD4613700DD3587 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6CB5B051CD4613700DD3587 /* ViewController.swift */; };
@@ -18,6 +20,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F64699E01CD5B93000BF81D4 /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bolts.framework; sourceTree = "<group>"; };
+		F64699E11CD5B93000BF81D4 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
 		F67379711CD4BECA00BE4BF0 /* TableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 		F6CB5B001CD4613700DD3587 /* Neighborgoods.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Neighborgoods.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F6CB5B031CD4613700DD3587 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -35,7 +39,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F64699E21CD5B93000BF81D4 /* Bolts.framework in Frameworks */,
 				F6CB5B1A1CD463E400DD3587 /* MapKit.framework in Frameworks */,
+				F64699E31CD5B93000BF81D4 /* Parse.framework in Frameworks */,
 				F6CB5B181CD463D600DD3587 /* CoreLocation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -46,6 +52,8 @@
 		F6CB5AF71CD4613700DD3587 = {
 			isa = PBXGroup;
 			children = (
+				F64699E01CD5B93000BF81D4 /* Bolts.framework */,
+				F64699E11CD5B93000BF81D4 /* Parse.framework */,
 				F6CB5B191CD463E400DD3587 /* MapKit.framework */,
 				F6CB5B171CD463D600DD3587 /* CoreLocation.framework */,
 				F6CB5B021CD4613700DD3587 /* Neighborgoods */,
@@ -267,6 +275,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = Neighborgoods/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.lindseybakermedia.Neighborgoods;
@@ -278,6 +290,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = Neighborgoods/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.lindseybakermedia.Neighborgoods;
