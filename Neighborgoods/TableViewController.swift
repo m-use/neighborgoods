@@ -9,6 +9,9 @@
 import UIKit
 import CoreLocation
 
+var promotions = [Dictionary<String,String>]()
+var promoNum = -1
+
 class TableViewController: UITableViewController, CLLocationManagerDelegate {
     
     var cityName:String = ""
@@ -22,6 +25,8 @@ class TableViewController: UITableViewController, CLLocationManagerDelegate {
         manager.desiredAccuracy = kCLLocationAccuracyBest
         manager.requestWhenInUseAuthorization()
         manager.startUpdatingLocation()
+        promotions.append(["business":"Bread Basket Bakery","address":"4436 N. Miller Rd. Ste 102","city":"Scottsdale","state":"AZ","zip":"85251","phone":"(480) 423-0113","url":"http://breadbasketbakeryscottsdale.com/","title":"Buy Two Loaves, Get One Free!","expiration":"May 13, 2016","details":"For every two loaves of bread you buy here at Bread Basket Bakery, you get one loaf of equal or lesser value free. Our bread is made fresh onsite every morning, so come check us out!"])
+        promotions.append(["business":"Bread Basket Bakery","address":"12956 E. Sahuaro Dr.","city":"Scottsdale","state":"AZ","zip":"85259","phone":"(480) 423-0113","url":"http://breadbasketbakeryscottsdale.com/","title":"Buy Two Loaves, Get One Free!!!","expiration":"May 13, 2016","details":"For every two loaves of bread you buy here at Bread Basket Bakery, you get one loaf of equal or lesser value free. Our bread is made fresh onsite every morning, so come check us out!!!"])
         
 
         // Uncomment the following line to preserve selection between presentations
@@ -45,15 +50,20 @@ class TableViewController: UITableViewController, CLLocationManagerDelegate {
 
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return 3
+        return promotions.count
     }
 
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier("Cell", forIndexPath: indexPath)
 
-        cell.textLabel?.text = "Test"
+        cell.textLabel?.text = promotions[indexPath.row]["title"]
 
         return cell
+    }
+    
+    override func tableView(tableView: UITableView, willSelectRowAtIndexPath indexPath: NSIndexPath) -> NSIndexPath? {
+        promoNum = indexPath.row
+        return indexPath
     }
 
     /*
@@ -109,7 +119,6 @@ class TableViewController: UITableViewController, CLLocationManagerDelegate {
     }
     
     func locationManager(manager: CLLocationManager, didUpdateToLocation newLocation: CLLocation, fromLocation oldLocation: CLLocation) {
-        print(newLocation.coordinate.latitude)
         CLGeocoder().reverseGeocodeLocation(newLocation, completionHandler: { (placemarks, error) -> Void in
             
             if (error == nil) {
@@ -127,7 +136,7 @@ class TableViewController: UITableViewController, CLLocationManagerDelegate {
                     }
                     
                     self.cityName = "\(locality)"
-                    self.navigationController?.navigationBar.topItem?.title = self.cityName
+                    
                     
                 }
                 

@@ -5,7 +5,7 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
     </dependencies>
     <scenes>
-        <!--Table View Controller-->
+        <!--Neighborgoods-->
         <scene sceneID="CPo-Kw-HkN">
             <objects>
                 <tableViewController id="xyj-6h-Fpn" customClass="TableViewController" customModule="Neighborgoods" customModuleProvider="target" sceneMemberID="viewController">
@@ -21,6 +21,9 @@
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="Wiz-4l-PLH"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -28,12 +31,8 @@
                             <outlet property="delegate" destination="xyj-6h-Fpn" id="wCR-Rm-5Cj"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="Uc9-JM-AJM">
-                        <barButtonItem key="rightBarButtonItem" title="Item" id="246-2q-UgK">
-                            <connections>
-                                <segue destination="BYZ-38-t0r" kind="show" id="538-ZF-l5B"/>
-                            </connections>
-                        </barButtonItem>
+                    <navigationItem key="navigationItem" title="Neighborgoods" id="Uc9-JM-AJM">
+                        <barButtonItem key="backBarButtonItem" title="Back" id="Mxu-jQ-oFf"/>
                     </navigationItem>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
                     <nil key="simulatedBottomBarMetrics"/>
