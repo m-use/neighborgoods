@@ -8,6 +8,7 @@
 
 import UIKit
 import CoreLocation
+import Parse
 
 var promotions = [Dictionary<String,String>]()
 var promoNum = -1
@@ -20,6 +21,23 @@ class TableViewController: UITableViewController, CLLocationManagerDelegate {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        
+//        let product = PFObject(className: "Products")
+//        product["name"] = "Soda"
+//        product["description"] = "CocaCola"
+//        product["price"] = "1.99"
+//        product.saveInBackgroundWithBlock { (success, error) -> Void in
+//            if success == true {
+//                print("Object save with ID \(product.objectId)")
+//            } else {
+//                print("Fail")
+//                print(error)
+//            }
+//        }
+
+        
+        
         navStyle()
         manager.delegate = self
         manager.desiredAccuracy = kCLLocationAccuracyBest
