@@ -1,3 +1,24 @@
-Neighborgoods.xcodeproj/project.xcworkspace/xcuserdata/m-use.xcuserdatad/UserInterfaceState.xcuserstate
-
+# Mac OS X
 *.DS_Store
+
+# Xcode
+*.pbxuser
+*.mode1v3
+*.mode2v3
+*.perspectivev3
+*.xcuserstate
+project.xcworkspace/
+xcuserdata/
+
+# Generated files
+*.o
+*.pyc
+
+
+#Python modules
+MANIFEST
+dist/
+build/
+
+# Backup files
+*~.nib
