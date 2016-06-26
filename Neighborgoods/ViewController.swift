@@ -16,17 +16,20 @@ class ViewController: UIViewController {
     @IBOutlet var titleLabel: UILabel!
     @IBOutlet var expirationLabel: UILabel!
     @IBOutlet var detailsLabel: UITextView!
+    @IBOutlet var promotionImage: UIImageView!
     
     var location = CLLocationCoordinate2D()
     var mapItem = MKMapItem()
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.title = promotions[promoNum]["business"]
+        navigationItem.titleView = UIImageView(image: UIImage(named: "logo"))
+        let customFont = UIFont(name: "Helvetica Neue", size: 15.0)
+        UIBarButtonItem.appearance().setTitleTextAttributes([NSFontAttributeName: customFont!], forState: UIControlState.Normal)
         displayBusinessInfo()
         displayPromoInfo()
         
-        CLGeocoder().geocodeAddressString("\(promotions[promoNum]["address"]), \(promotions[promoNum]["city"]), \(promotions[promoNum]["state"]), \(promotions[promoNum]["zip"])", completionHandler: { (placemarks, error) -> Void in
+        CLGeocoder().geocodeAddressString("\(addresses[promoNum]), \(cities[promoNum]), \(states[promoNum]), \(zips[promoNum])", completionHandler: { (placemarks, error) -> Void in
             if (error == nil) {
                 if let p = placemarks?[0] {
                     self.location = p.location!.coordinate
@@ -37,19 +40,19 @@ class ViewController: UIViewController {
     }
     
     func displayBusinessInfo() {
-        nameLabel.text = promotions[promoNum]["business"]
+        nameLabel.text = businesses[promoNum]
         addressLabel.titleLabel?.lineBreakMode = NSLineBreakMode.ByWordWrapping
-        addressLabel.setTitle("\(promotions[promoNum]["address"]!)\n\(promotions[promoNum]["city"]!), \(promotions[promoNum]["state"]!), \(promotions[promoNum]["zip"]!)", forState: .Normal)
-        phoneLabel.setTitle("\(promotions[promoNum]["phone"]!)", forState: .Normal)
+        addressLabel.setTitle("\(addresses[promoNum])\n\(cities[promoNum]), \(states[promoNum]), \(zips[promoNum])", forState: .Normal)
+        phoneLabel.setTitle("\(phones[promoNum])", forState: .Normal)
     }
     
     func displayPromoInfo() {
-        titleLabel.text = promotions[promoNum]["title"]
-        expirationLabel.text = "Expires \(promotions[promoNum]["expiration"]!)"
-        detailsLabel.text = promotions[promoNum]["details"]
+        titleLabel.text = titles[promoNum]
+        expirationLabel.text = "Expires \(expirations[promoNum])"
+promotionImage.image = downloadedImages[promoNum]
+        detailsLabel.text = descriptions[promoNum]
         detailsLabel.contentInset = UIEdgeInsetsMake(-4,-4,-4,-4);
         detailsLabel.sizeToFit()
-        
     }
 
     override func didReceiveMemoryWarning() {
@@ -59,16 +62,25 @@ class ViewController: UIViewController {
     
     // Opens Maps app
     @IBAction func map(sender: AnyObject) {
-        mapItem.name = promotions[promoNum]["business"]
-        mapItem.phoneNumber = promotions[promoNum]["phone"]
-        mapItem.url = NSURL(string: "\(promotions[promoNum]["url"]!)")
+        mapItem.name = businesses[promoNum]
+        mapItem.phoneNumber = phones[promoNum]
+        mapItem.url = NSURL(string: "\(urls[promoNum])")
         mapItem.openInMapsWithLaunchOptions(nil)
     }
 
     // Opens Phone app
     @IBAction func phone(sender: AnyObject) {
-        let url:NSURL = NSURL(string: "tel://\(promotions[promoNum]["phone"])")!
-        UIApplication.sharedApplication().openURL(url)
+let stringArray = phones[promoNum].componentsSeparatedByCharactersInSet(
+    NSCharacterSet.decimalDigitCharacterSet().invertedSet)
+let simpleNum = stringArray.joinWithSeparator("")
+        if let url = NSURL(string: "tel:\(simpleNum)") {
+            let application = UIApplication.sharedApplication()
+            if application.canOpenURL(url) {
+                application.openURL(url)
+            }
+        } else {
+            print("failed")
+        }
         
     }
 }

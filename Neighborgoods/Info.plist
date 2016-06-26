@@ -26,10 +26,17 @@
 	<string>We need to know your location to provide nearby promotions.</string>
 	<key>NSLocationWhenInUseUsageDescription</key>
 	<string>We need to know your location to provide nearby promotions.</string>
-	<key>UILaunchStoryboardName</key>
-	<string>LaunchScreen</string>
 	<key>UIMainStoryboardFile</key>
 	<string>Main</string>
+	<key>UIAppFonts</key>
+	<array>
+		<string>Wisdom Script AJ.otf</string>
+	</array>
+	<key>NSAppTransportSecurity</key>
+	<dict>
+		<key>NSAllowsArbitraryLoads</key>
+		<true/>
+	</dict>
 	<key>UIRequiredDeviceCapabilities</key>
 	<array>
 		<string>armv7</string>

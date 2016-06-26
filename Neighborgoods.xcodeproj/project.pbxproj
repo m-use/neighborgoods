@@ -13,12 +13,14 @@
 		F64699E71CD5BA9000BF81D4 /* libstdc++.6.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = F64699E61CD5BA9000BF81D4 /* libstdc++.6.tbd */; };
 		F64699E91CD5BABF00BF81D4 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F64699E81CD5BABF00BF81D4 /* SystemConfiguration.framework */; };
 		F64699EB1CD5BADB00BF81D4 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F64699EA1CD5BADB00BF81D4 /* AudioToolbox.framework */; };
+		F64699F01CD6286A00BF81D4 /* Wisdom Script AJ.otf in Resources */ = {isa = PBXBuildFile; fileRef = F64699EF1CD627B700BF81D4 /* Wisdom Script AJ.otf */; };
+		F64699F41CD6C41900BF81D4 /* PostImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F64699F31CD6C41900BF81D4 /* PostImageViewController.swift */; };
+		F64699F61CD6E5CD00BF81D4 /* Cell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F64699F51CD6E5CD00BF81D4 /* Cell.swift */; };
 		F67379721CD4BECA00BE4BF0 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F67379711CD4BECA00BE4BF0 /* TableViewController.swift */; };
 		F6CB5B041CD4613700DD3587 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6CB5B031CD4613700DD3587 /* AppDelegate.swift */; };
 		F6CB5B061CD4613700DD3587 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6CB5B051CD4613700DD3587 /* ViewController.swift */; };
 		F6CB5B091CD4613700DD3587 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F6CB5B071CD4613700DD3587 /* Main.storyboard */; };
 		F6CB5B0B1CD4613700DD3587 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F6CB5B0A1CD4613700DD3587 /* Assets.xcassets */; };
-		F6CB5B0E1CD4613700DD3587 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F6CB5B0C1CD4613700DD3587 /* LaunchScreen.storyboard */; };
 		F6CB5B181CD463D600DD3587 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F6CB5B171CD463D600DD3587 /* CoreLocation.framework */; };
 		F6CB5B1A1CD463E400DD3587 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F6CB5B191CD463E400DD3587 /* MapKit.framework */; };
 /* End PBXBuildFile section */
@@ -30,13 +32,15 @@
 		F64699E61CD5BA9000BF81D4 /* libstdc++.6.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libstdc++.6.tbd"; path = "usr/lib/libstdc++.6.tbd"; sourceTree = SDKROOT; };
 		F64699E81CD5BABF00BF81D4 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		F64699EA1CD5BADB00BF81D4 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		F64699EF1CD627B700BF81D4 /* Wisdom Script AJ.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Wisdom Script AJ.otf"; sourceTree = "<group>"; };
+		F64699F31CD6C41900BF81D4 /* PostImageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostImageViewController.swift; sourceTree = "<group>"; };
+		F64699F51CD6E5CD00BF81D4 /* Cell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Cell.swift; sourceTree = "<group>"; };
 		F67379711CD4BECA00BE4BF0 /* TableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 		F6CB5B001CD4613700DD3587 /* Neighborgoods.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Neighborgoods.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F6CB5B031CD4613700DD3587 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F6CB5B051CD4613700DD3587 /* ViewController.swift */ = {isa = PBXFileReference; indentWidth = 0; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; tabWidth = 1; usesTabs = 0; };
 		F6CB5B081CD4613700DD3587 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F6CB5B0A1CD4613700DD3587 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		F6CB5B0D1CD4613700DD3587 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F6CB5B0F1CD4613700DD3587 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F6CB5B171CD463D600DD3587 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		F6CB5B191CD463E400DD3587 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
@@ -61,6 +65,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F64699EE1CD626C700BF81D4 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				F64699EF1CD627B700BF81D4 /* Wisdom Script AJ.otf */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
 		F6CB5AF71CD4613700DD3587 = {
 			isa = PBXGroup;
 			children = (
@@ -88,12 +100,14 @@
 		F6CB5B021CD4613700DD3587 /* Neighborgoods */ = {
 			isa = PBXGroup;
 			children = (
+				F64699EE1CD626C700BF81D4 /* Resources */,
 				F6CB5B031CD4613700DD3587 /* AppDelegate.swift */,
 				F6CB5B051CD4613700DD3587 /* ViewController.swift */,
 				F6CB5B071CD4613700DD3587 /* Main.storyboard */,
+				F64699F51CD6E5CD00BF81D4 /* Cell.swift */,
+				F64699F31CD6C41900BF81D4 /* PostImageViewController.swift */,
 				F67379711CD4BECA00BE4BF0 /* TableViewController.swift */,
 				F6CB5B0A1CD4613700DD3587 /* Assets.xcassets */,
-				F6CB5B0C1CD4613700DD3587 /* LaunchScreen.storyboard */,
 				F6CB5B0F1CD4613700DD3587 /* Info.plist */,
 			);
 			path = Neighborgoods;
@@ -163,7 +177,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F6CB5B0E1CD4613700DD3587 /* LaunchScreen.storyboard in Resources */,
+				F64699F01CD6286A00BF81D4 /* Wisdom Script AJ.otf in Resources */,
 				F6CB5B0B1CD4613700DD3587 /* Assets.xcassets in Resources */,
 				F6CB5B091CD4613700DD3587 /* Main.storyboard in Resources */,
 			);
@@ -176,7 +190,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F64699F41CD6C41900BF81D4 /* PostImageViewController.swift in Sources */,
 				F6CB5B061CD4613700DD3587 /* ViewController.swift in Sources */,
+				F64699F61CD6E5CD00BF81D4 /* Cell.swift in Sources */,
 				F67379721CD4BECA00BE4BF0 /* TableViewController.swift in Sources */,
 				F6CB5B041CD4613700DD3587 /* AppDelegate.swift in Sources */,
 			);
@@ -191,14 +207,6 @@
 				F6CB5B081CD4613700DD3587 /* Base */,
 			);
 			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		F6CB5B0C1CD4613700DD3587 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				F6CB5B0D1CD4613700DD3587 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -291,6 +299,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
@@ -306,6 +315,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
